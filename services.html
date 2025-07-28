@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Management System</title>
+
+
+
+  <!--  Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--  Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+
+  <!--  Navbar include -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4 ms-4  sticky-top shadow ">
+  <div class="container-fluid">
+
+
+ <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <img src="images/UmmahFit Logo Design.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top rounded">
+  <span class="fw-bold fs-5 text-danger me-5">UmmahFit</span>
+</a>
+
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 fw-semibold fs-5" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contactus.html">Contact</a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Membership</a>
+        </li>  -->
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="myprofile.html">My_Profile</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href=services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="strength_training.html">Strength Training</a></li>
+            <li><a class="dropdown-item" href="weight_gain.html">Weight Gain</a></li>
+            <li><a class="dropdown-item" href="weight_loss.html">Weight Loss</a></li>
+            <li><a class="dropdown-item" href="cardio_training.html">Cardio  Training</a></li>
+            <li><a class="dropdown-item" href="yoga_guidance.html">Yoga Guidance</a></li>
+
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Training method select by Form </a></li>
+          </ul>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="membership.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Membership
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="monthly.html">Monthly Fee</a></li>
+            <li><a class="dropdown-item" href="yearly.html">Year</a></li>
+            <li><a class="dropdown-item" href="daily.html">Daily(on use)</a></li>
+            
+          </ul>
+        </li>
+
+
+      </ul>
+     
+    </div>
+     <div class="ms-auto me-5 d-flex gap-3">
+       <button type="button" href="signup.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;"
+onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Sign Up
+</button>
+
+
+<button type="button" href="login.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Log In
+</button>
+
+      </div>
+  </div>
+</nav>
+
+
+
+
+<section class="py-5 bg-light ">
+  <div class="container ">
+    <h1 class="text-center text-danger fw-bold mb-5 mt-5 display-4">Our Services</h1>
+    <div class="row g-5 mt-5">
+
+      <!-- Strength Training -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 shadow border-0">
+          <img src="strangth.webp" class="card-img-top" alt="Strength Training">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Strength Training</h4>
+            <p class="card-text text-muted">
+  Our Strength Training program is designed to help you build lean muscle mass, enhance physical power, and improve overall endurance.
+  With guided workouts using free weights, machines, and bodyweight routines, this service caters to all fitness levels—from beginners to seasoned athletes.
+  You'll also receive advice on proper form, recovery, and Islamic health ethics, ensuring that your journey is both effective and spiritually fulfilling.
+</p>
+
+            <a href="strength_training.html" class="btn btn-danger mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weight Gain -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 shadow border-0">
+          <img src="gainn.jpg" class="card-img-top" alt="Weight Gain">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Weight Gain</h4>
+           <p class="card-text text-muted">
+  For individuals struggling with being underweight, our Weight Gain program provides customized meal plans and strength-based workouts aimed at healthy bulking.
+  We focus on nutrient-dense food, consistent muscle training, and lifestyle habits aligned with prophetic wisdom.
+  Whether due to metabolism or appetite issues, our experts help you gain weight safely and naturally, in line with Islamic nutritional guidance.
+</p>
+
+            <a href="weight_gain.html" class="btn btn-danger mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weight Loss -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 shadow border-0">
+          <img src="loss.jpg" class="card-img-top" alt="Weight Loss">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Weight Loss</h4>
+            <p class="card-text text-muted">
+  Our Weight Loss service is more than just fat reduction — it's a lifestyle transformation.
+  We combine high-intensity workouts, cardio, and diet plans rooted in Halal and Sunnah-based eating.
+  Trainers provide ongoing support and motivation while you improve energy levels, reduce fat, and restore confidence, all while staying connected to your Deen.
+</p>
+
+            <a href="weight_loss.html" class="btn btn-danger mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cardio Training -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 shadow border-0">
+          <img src="cardio.jpg" class="card-img-top" alt="Cardio Training">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Cardio Training</h4>
+          <p class="card-text text-muted">
+  Cardio Training boosts your heart health, increases stamina, and accelerates fat loss. 
+  Our sessions include treadmill workouts, cycling, HIIT routines, and low-impact exercises suitable for all fitness levels.
+  Whether you're preparing for better sports performance or just want to feel more energetic, our cardio programs are structured, motivating, and spiritually uplifting.
+</p>
+
+            <a href="cardio_training.html" class="btn btn-danger mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yoga Guidance -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 shadow border-0">
+          <img src="yoga.avif" class="card-img-top" alt="Yoga Guidance">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Yoga Guidance</h4>
+        <p class="card-text text-muted">
+  Our Yoga Guidance service is focused on mindfulness, flexibility, and healing — all delivered in a modest, Islamic-friendly environment.
+  We emphasize breathing control, posture alignment, and inner peace, helping you relieve stress and connect body and soul.
+  Our sessions avoid un-Islamic practices and are carefully structured to help Muslim members experience calm and clarity while strengthening the body.
+</p>
+
+            <a href="yoga_guidance.html" class="btn btn-danger mt-2">Explore</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

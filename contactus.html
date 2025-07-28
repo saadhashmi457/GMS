@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Management System</title>
+
+
+
+  <!--  Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--  Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+
+  <!--  Navbar include -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4 ms-4  sticky-top shadow ">
+  <div class="container-fluid">
+
+
+ <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <img src="images/UmmahFit Logo Design.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top rounded">
+  <span class="fw-bold fs-5 text-danger me-5">UmmahFit</span>
+</a>
+
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 fw-semibold fs-5" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contactus.html">Contact</a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Membership</a>
+        </li>  -->
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="myprofile.html">My_Profile</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href=services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="strength_training.html">Strength Training</a></li>
+            <li><a class="dropdown-item" href="weight_gain.html">Weight Gain</a></li>
+            <li><a class="dropdown-item" href="weight_loss.html">Weight Loss</a></li>
+            <li><a class="dropdown-item" href="cardio_training.html">Cardio  Training</a></li>
+            <li><a class="dropdown-item" href="yoga_guidance.html">Yoga Guidance</a></li>
+
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Training method select by Form </a></li>
+          </ul>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="membership.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Membership
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="monthly.html">Monthly Fee</a></li>
+            <li><a class="dropdown-item" href="yearly.html">Year</a></li>
+            <li><a class="dropdown-item" href="daily.html">Daily(on use)</a></li>
+            
+          </ul>
+        </li>
+
+
+      </ul>
+     
+    </div>
+     <div class="ms-auto me-5 d-flex gap-3">
+       <button type="button" href="signup.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;"
+onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Sign Up
+</button>
+
+
+<button type="button" href="login.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Log In
+</button>
+
+      </div>
+  </div>
+</nav>
+
+<!-- Contact Us Section -->
+<section class="contact-section py-5 mb-5" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #fff; font-family: 'Poppins', sans-serif;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-info fw-bold display-5">Contact Us</h2>
+      <p class="text-light fs-5">We’d love to hear from you. Fill out the form and we'll get back to you shortly.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <form class="p-4 p-md-5 bg-dark rounded-4 shadow-lg border border-secondary">
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control bg-dark text-light border-0 shadow-sm contact-input" id="name" placeholder="Your Name" required>
+            <label for="name">Your Name</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="email" class="form-control bg-dark text-light border-0 shadow-sm contact-input" id="email" placeholder="Your Email" required>
+            <label for="email">Email Address</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control bg-dark text-light border-0 shadow-sm contact-input" id="subject" placeholder="Subject">
+            <label for="subject">Subject</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <textarea class="form-control bg-dark text-light border-0 shadow-sm contact-input" placeholder="Your Message" id="message" style="height: 150px" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+
+          <div class="d-grid mt-4">
+            <button type="submit" class="btn btn-info btn-danger btn-lg text-dark fw-semibold shadow-sm transition-all">
+              🚀 Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Gym Info -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">🏋️ UmmahFit Gym</h5>
+        <p>
+          UmmahFit is designed for the fitness of the Muslim Ummah. Whether you're managing a gym or running community classes, this platform supports health and harmony in a values-based environment.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="membership.html" class="text-light text-decoration-none">Membership</a></li>
+          <li><a href="services.html" class="text-light text-decoration-none">services</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">Contact Us</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-geo-alt-fill"></i> Khuiratta,Kotli Azad kashmir</li>
+          <li><i class="bi bi-telephone-fill"></i> +92 3116412711</li>
+          <li><i class="bi bi-envelope-fill"></i> ummahfit145@gmail.com</li>
+          <a href="contactus.html"><li><i class="bi bi-arrow-right"></i> ClickMe! for Contact-as-a-form</li></a>
+        </ul>
+        <!-- Social Icons (optional) -->
+        <div class="mt-2">
+          <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="bg-light mt-4">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 UmmahFit Gym. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Management System</title>
+
+
+
+  <!--  Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--  Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+
+  <!--  Navbar include -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4 ms-4  sticky-top shadow ">
+  <div class="container-fluid">
+
+
+ <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <img src="images/UmmahFit Logo Design.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top rounded">
+  <span class="fw-bold fs-5 text-danger me-5">UmmahFit</span>
+</a>
+
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 fw-semibold fs-5" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contactus.html">Contact</a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Membership</a>
+        </li>  -->
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="myprofile.html">My_Profile</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href=services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="strength_training.html">Strength Training</a></li>
+            <li><a class="dropdown-item" href="weight_gain.html">Weight Gain</a></li>
+            <li><a class="dropdown-item" href="weight_loss.html">Weight Loss</a></li>
+            <li><a class="dropdown-item" href="cardio_training.html">Cardio  Training</a></li>
+            <li><a class="dropdown-item" href="yoga_guidance.html">Yoga Guidance</a></li>
+
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Training method select by Form </a></li>
+          </ul>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="membership.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Membership
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="monthly.html">Monthly Fee</a></li>
+            <li><a class="dropdown-item" href="yearly.html">Year</a></li>
+            <li><a class="dropdown-item" href="daily.html">Daily(on use)</a></li>
+            
+          </ul>
+        </li>
+
+
+      </ul>
+     
+    </div>
+     <div class="ms-auto me-5 d-flex gap-3">
+       <button type="button" href="signup.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;"
+onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Sign Up
+</button>
+
+
+<button type="button" href="login.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Log In
+</button>
+
+      </div>
+  </div>
+</nav>
+
+
+
+<!-- ABOUT US SECTION WITH BACKGROUND IMAGE AND LEFT TEXT -->
+<section class="py-5 position-relative text-start text-white" style="background-image: url('a.jpg'); background-size: cover; ">
+
+  <!-- Dark overlay -->
+  <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0,0,0,0.6); z-index: 1;"></div>
+
+  <!-- Content -->
+  <div class=" col-md-6  text-md-start container position-relative" style="z-index: 2;">
+    <h1 class="text-warning display-3 fw-bold mb-4 mt-5">About UmmahFit</h1>
+
+    <p class="fs-5 mb-5 fs-2 ms-3 ">
+      Welcome to <strong>UmmahFit</strong> — where your journey to becoming a stronger,
+       more disciplined, and spiritually empowered individual begins.
+      Founded with a passion for uplifting the Ummah, UmmahFit goes beyond a regular gym experience.
+      It is a transformative environment where modern fitness meets Islamic values.
+    </p>
+
+    <hr class="my-5 text-light">
+
+    <h2 class="fw-semibold text-warning mt-5">Our Mission</h2>
+    <p class="fs-5 mb-5 fs-4">
+      Our mission is to develop physically strong, mentally tough, and spiritually conscious individuals in the Muslim community.
+      We believe that the body is an Amanah (trust) from Allah ﷻ, and it's our duty to take care of it.
+      At UmmahFit, we’re here to motivate, educate, and uplift you—so you can strive for excellence in both this life and the Hereafter.
+    </p>
+
+    <h2 class="fw-semibold text-warning mt-5">Meet Our Certified Trainers</h2>
+    <p class="fs-5 mb-5 fs-4">
+      Our trainers are not only fitness professionals but also mentors who understand your values.
+      They are certified in physical training, sports nutrition, and also receive training in Islamic ethics to provide a wholesome coaching experience.
+      From strength building to endurance, we cater to every goal with tailored fitness plans.
+    </p>
+
+    <h2 class="fw-semibold text-warning mt-5">State-of-the-Art Facilities</h2>
+    <p class="fs-5 mb-5 fs-4">
+      We offer a clean, spacious, and well-equipped facility with the latest in gym equipment, functional training areas, a women-only workout zone, prayer areas, and healthy refreshment bars.
+      All spaces are designed with Islamic etiquette and community comfort in mind.
+    </p>
+
+    <h2 class="fw-semibold text-warning mt-5">Faith Meets Fitness</h2>
+    <p class="fs-5 mb-5 fs-4">
+      We understand the importance of balancing your Deen with your Dunya.
+      That’s why our programs are aligned with the Sunnah lifestyle — including prophetic nutrition, Halal meal plans, and rest cycles based on Islamic principles.
+      Our aim is to make fitness an act of worship.
+    </p>
+
+    <h2 class="fw-semibold text-warning mt-5">Community & Brotherhood</h2>
+    <p class="fs-5 mb-5 fs-4">
+      UmmahFit is not just a gym; it's a community center for the youth and elders alike.
+      We host regular motivational talks, Quran and fitness workshops, Islamic goal-setting sessions, and charity fitness challenges.
+      We want every member to feel valued, empowered, and spiritually fulfilled.
+    </p>
+
+    <hr class="my-5 text-light">
+
+    <div class="text-start">
+      <a href="contactus.html" class="btn btn-danger btn-lg">Join Our Family</a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Gym Info -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">🏋️ UmmahFit Gym</h5>
+        <p>
+          UmmahFit is designed for the fitness of the Muslim Ummah. Whether you're managing a gym or running community classes, this platform supports health and harmony in a values-based environment.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="membership.html" class="text-light text-decoration-none">Membership</a></li>
+          <li><a href="services.html" class="text-light text-decoration-none">services</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">Contact Us</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-geo-alt-fill"></i> Khuiratta,Kotli Azad kashmir</li>
+          <li><i class="bi bi-telephone-fill"></i> +92 3116412711</li>
+          <li><i class="bi bi-envelope-fill"></i> ummahfit145@gmail.com</li>
+          <a href="contactus.html"><li><i class="bi bi-arrow-right"></i> ClickMe! for Contact-as-a-form</li></a>
+        </ul>
+        <!-- Social Icons (optional) -->
+        <div class="mt-2">
+          <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="bg-light mt-4">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 UmmahFit Gym. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

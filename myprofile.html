@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Management System</title>
+
+
+
+  <!--  Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--  Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+
+  <!--  Navbar include -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4 ms-4  sticky-top shadow ">
+  <div class="container-fluid">
+
+
+ <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <img src="images/UmmahFit Logo Design.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top rounded">
+  <span class="fw-bold fs-5 text-danger me-5">UmmahFit</span>
+</a>
+
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 fw-semibold fs-5" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contactus.html">Contact</a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Membership</a>
+        </li>  -->
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="myprofile.html">My_Profile</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href=services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="strength_training.html">Strength Training</a></li>
+            <li><a class="dropdown-item" href="weight_gain.html">Weight Gain</a></li>
+            <li><a class="dropdown-item" href="weight_loss.html">Weight Loss</a></li>
+            <li><a class="dropdown-item" href="cardio_training.html">Cardio  Training</a></li>
+            <li><a class="dropdown-item" href="yoga_guidance.html">Yoga Guidance</a></li>
+
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Training method select by Form </a></li>
+          </ul>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="membership.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Membership
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="monthly.html">Monthly Fee</a></li>
+            <li><a class="dropdown-item" href="yearly.html">Year</a></li>
+            <li><a class="dropdown-item" href="daily.html">Daily(on use)</a></li>
+            
+          </ul>
+        </li>
+
+
+      </ul>
+     
+    </div>
+     <div class="ms-auto me-5 d-flex gap-3">
+       <button type="button" href="signup.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;"
+onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Sign Up
+</button>
+
+
+<button type="button" href="login.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Log In
+</button>
+
+      </div>
+  </div>
+</nav>
+
+
+
+
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+  <div class="card p-4 shadow-lg" style="max-width: 600px; width: 100%; border-radius: 16px;">
+    <div class="card-body">
+      <h3 class="card-title text-center mb-3">
+        <i class="bi bi-person-circle me-2"></i> Edit Your Profile
+      </h3>
+      <p class="text-center text-muted mb-4">Keep your UmmahFit info up to date</p>
+
+      <form method="post">
+        <!-- First Name -->
+        <div class="mb-3">
+          <label for="first_name" class="form-label">First Name</label>
+          <input type="text" id="first_name" name="first_name" class="form-control" placeholder="e.g., Ahmad">
+        </div>
+
+        <!-- Last Name -->
+        <div class="mb-3">
+          <label for="last_name" class="form-label">Last Name</label>
+          <input type="text" id="last_name" name="last_name" class="form-control" placeholder="e.g., Khan">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control bg-light" value="portfolio" readonly>
+        </div>
+
+        <!-- Change Password -->
+        <div class="mb-4">
+          <label for="password" class="form-label">Change Password</label>
+          <input type="password" id="password" name="password" class="form-control bg-light" placeholder="********">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-success w-100">
+          <i class="bi bi-save2 me-1"></i> Save Changes
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+

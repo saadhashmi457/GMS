@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Management System</title>
+
+
+
+  <!--  Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--  Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+
+  <!--  Navbar include -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4 ms-4  sticky-top shadow ">
+  <div class="container-fluid">
+
+
+ <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <img src="images/UmmahFit Logo Design.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top rounded">
+  <span class="fw-bold fs-5 text-danger me-5">UmmahFit</span>
+</a>
+
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 fw-semibold fs-5" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contactus.html">Contact</a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Membership</a>
+        </li>  -->
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="myprofile.html">My_Profile</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href=services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="strength_training.html">Strength Training</a></li>
+            <li><a class="dropdown-item" href="weight_gain.html">Weight Gain</a></li>
+            <li><a class="dropdown-item" href="weight_loss.html">Weight Loss</a></li>
+            <li><a class="dropdown-item" href="cardio_training.html">Cardio  Training</a></li>
+            <li><a class="dropdown-item" href="yoga_guidance.html">Yoga Guidance</a></li>
+
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Training method select by Form </a></li>
+          </ul>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="membership.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Membership
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="monthly.html">Monthly Fee</a></li>
+            <li><a class="dropdown-item" href="yearly.html">Year</a></li>
+            <li><a class="dropdown-item" href="daily.html">Daily(on use)</a></li>
+            
+          </ul>
+        </li>
+
+
+      </ul>
+     
+    </div>
+     <div class="ms-auto me-5 d-flex gap-3">
+       <button type="button" href="signup.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;"
+onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Sign Up
+</button>
+
+
+<button type="button" href="login.html" class="btn btn-success btn-lg" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+  Log In
+</button>
+
+      </div>
+  </div>
+</nav>
+
+
+   <form class="d-flex ms-auto col-md-4 me-5 mt-3 mb-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+
+<div class="alert alert-warning alert-dismissible fade show mt-3 mx-auto w-75" role="alert">
+  If you want to join us please! <strong>Signup</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+<!-- Welcome Section -->
+<section class="py-5 mb-5 pb-5 " style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Text Content -->
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="display-5 fw-bold text-primary mb-5 mt-5">Welcome to <span class="text-danger">UmmahFit</span> Website</h1>
+        <p class="lead mb-4">
+          This is a gym where you can make your strengths unbelievable. Our mission is to promote health, discipline, and the physical and spiritual strength of the Ummah. Join us on your journey to a powerful transformation.
+        </p>
+        <div>
+          <a href="register.html" class="btn btn-danger btn-lg me-3">Join Now</a>
+          <a href="services.html" class="btn btn-outline-dark btn-lg">Explore More</a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-6 text-center mt-5 mt-md-0 " >
+        <img src="w1.jpeg" class=" rounded shadow  "  width= "70%"  alt="Gym Introduction Image">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Bootstrap Carousel -->
+<div id="carouselExampleCaptions" class="carousel slide mt-5 pt-5 mb-5 pb-5" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- SLIDES START -->
+  <div class="carousel-inner mb-2 pb-2">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active position-relative">
+      <img src="slide3.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Empowering a Healthier Ummah</h2>
+        <p>Discipline is the bridge between goals and results.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item position-relative">
+      <img src="slide1.jpeg" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Fitness With Purpose</h2>
+        <p>Train your body. Elevate your soul.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item position-relative">
+      <img src="pexels-leonardho-1552252.jpg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Inspired by Sunnah, Powered by Strength</h2>
+        <p>"A strong believer is better and more beloved to Allah." — Prophet Muhammad ﷺ</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+ 
+
+   <!-- About Us Section (Short Version for Homepage) -->
+<section class="py-5 bg-light mt-5" id="about" style="background-color: #f4f4f4;">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold text-dark mt-4 btn-lg fw-bold display-5">About Us</h2>
+    <p class="lead text-center text-muted mt-5 mb-5" >
+      At <strong>UmmahFit</strong>, we believe fitness is more than just physical strength—it's a path to self-discipline, mental clarity, and spiritual elevation. 
+      Our gym was founded with the mission to empower the Muslim Ummah through holistic wellness—uniting body, mind, and faith.
+      Whether you're a beginner or a seasoned athlete, our supportive environment welcomes all. 
+      We focus on Sunnah-inspired practices, nutritional guidance, strength training, and character development.
+      With state-of-the-art equipment, certified trainers, and an uplifting atmosphere, we're more than a gym—we're a community.
+      Our goal is to foster a generation that is physically strong, emotionally balanced, and spiritually grounded.
+      Join us and become part of a movement that promotes excellence in both Dunya and Akhirah.
+    </p>
+    <div class="text-center mt-5">
+      <a href="about.html" class="btn btn-outline-danger btn-lg mb-5">Read More</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="py-5 bg-light" id="services">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-5 display-5">Our Core Services</h2>
+
+    <div class="row g-4 mt-5">
+      <!-- Strength Training -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <i class="fas fa-dumbbell fa-3x text-danger mb-3"></i>
+            <h5 class="card-title fw-bold">Strength Training</h5>
+            <p class="card-text text-muted">Build lean muscle mass, increase endurance, and strengthen your body under expert supervision.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weight Gain -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <i class="fas fa-weight fa-3x text-danger mb-3"></i>
+            <h5 class="card-title fw-bold">Weight Gain Program</h5>
+            <p class="card-text text-muted">Personalized workout and diet plans to help you gain healthy weight and muscle safely.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weight Loss -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <i class="fas fa-burn fa-3x text-danger mb-3"></i>
+            <h5 class="card-title fw-bold">Weight Loss Program</h5>
+            <p class="card-text text-muted">Burn fat, boost energy, and achieve your ideal physique with guided cardio and strength routines.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cardio Training -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <i class="fas fa-running fa-3x text-danger mb-3"></i>
+            <h5 class="card-title fw-bold">Cardio Training</h5>
+            <p class="card-text text-muted">Improve heart health, stamina, and overall fitness through structured cardio sessions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yoga Guidance -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <i class="fas fa-child fa-3x text-danger mb-3"></i>
+            <h5 class="card-title fw-bold">Yoga Guidance</h5>
+            <p class="card-text text-muted">Achieve mental clarity and physical balance with expert-led yoga practices for all levels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 mb-5">
+      <a href="services.html" class="btn btn-danger btn-lg px-4">View All Services</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- MEMBERSHIP PLANS SECTION -->
+<section class="py-5 mb-5" style="background: linear-gradient(135deg, #000428, #004e92);">
+  <div class="container text-white text-center">
+    
+    <!-- Heading -->
+    <div class="mb-5">
+      <h2 class="fw-bold display-5">Choose Your Membership Plan</h2>
+      <p class="fs-5 text-light">Flexible plans designed for your convenience and goals. Join <strong>UmmahFit</strong> and stay committed to fitness and faith.</p>
+    </div>
+
+    <!-- Plans -->
+    <div class="row g-4">
+      
+      <!-- Daily Plan -->
+      <div class="col-md-4">
+        <div class="bg-white text-dark rounded-4 shadow-lg p-4 h-100">
+          <h4 class="fw-bold text-primary mb-3">Daily Pass</h4>
+          <h2 class="fw-bold text-dark mb-3">PKR-100<span class="fs-6">/day</span></h2>
+          <ul class="list-unstyled text-muted fs-6 mb-4">
+            <li>✔ One-day access to gym</li>
+            <li>✔ Prayer room & basic amenities</li>
+            <li>✘ No personal trainer</li>
+            <li>✘ No group sessions</li>
+          </ul>
+          <a href="daily.html" class="btn btn-outline-primary w-100">Buy Pass</a>
+        </div>
+      </div>
+
+      <!-- Monthly Plan -->
+      <div class="col-md-4">
+        <div class="bg-danger text-white rounded-4 shadow-lg p-4 h-100">
+          <h4 class="fw-bold mb-3">Monthly Membership</h4>
+          <h2 class="fw-bold mb-3">PKR-3000<span class="fs-6">/month</span></h2>
+          <ul class="list-unstyled fs-6 mb-4">
+            <li>✔ Full access to gym & facilities</li>
+            <li>✔ 2 Personal Trainer sessions</li>
+            <li>✔ Group workout & cardio classes</li>
+            <li>✔ Hijab-friendly and gender-specific zones</li>
+          </ul>
+          <a href="monthly.html" class="btn btn-light text-danger fw-bold w-100">Join Monthly</a>
+        </div>
+      </div>
+
+      <!-- Yearly Plan -->
+      <div class="col-md-4">
+        <div class="bg-white text-dark rounded-4 shadow-lg p-4 h-100">
+          <h4 class="fw-bold text-success mb-3">Yearly Membership</h4>
+          <h2 class="fw-bold mb-3">PKR-35,000<span class="fs-6">/year</span></h2>
+          <ul class="list-unstyled text-muted fs-6 mb-4">
+            <li>✔ Unlimited gym + all group classes</li>
+            <li>✔ 12 Personal Trainer sessions</li>
+            <li>✔ Free health checkups every quarter</li>
+            <li>✔ Priority registration in fitness events</li>
+          </ul>
+          <a href="yearly.html" class="btn btn-success w-100">Get Yearly Access</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="py-5 bg-light mt-5 " id="membership-preview">
+  <div class="container">
+    <h2 class="text-center mb-4">Membership packages</h2>
+    <p class="text-center mb-5">Choose a package that suits your fitness goals and budget.</p>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <div class="card border-primary">
+          <div class="card-header bg-primary text-white">
+            Basic Plan
+          </div>
+          <div class="card-body">
+            <h4>Rs. 3000 / month</h4>
+            <p>Access to gym equipment and general quidance also</p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card border-success">
+          <div class="card-header bg-success text-white">
+            Standard Plan
+          </div>
+          <div class="card-body">
+            <h4>Rs. 8000 / 3 months</h4>
+            <p>Everything in Basic + Diet Plan + Guidance about all Things</p>
+         
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card border-warning">
+          <div class="card-header bg-warning text-dark">
+            Premium Plan
+          </div>
+          <div class="card-body">
+            <h4>Rs. 16000 / 6 months</h4>
+            <p>Everything in Standard + Personal Trainer + Oportunities as Trainer</p>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Modern Styling for Sections -->
+
+
+<!-- ===================== SECTION 1: PRAYER + WORKOUT SCHEDULE ===================== -->
+<section class="py-5 mt-5 mb-5" style="background: linear-gradient(135deg, #92a8d0ff, #0d1b33ff);">
+  <div class="container text-center text-white">
+    <h2 class="section-title">🕌 Prayer & Workout Schedule</h2>
+    <p class="mb-4">Plan your fitness without missing your prayers. Here's our suggested daily routine!</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-light shadow-card bg-white">
+        <thead class="table-success text-center">
+          <tr>
+            <th>Prayer</th>
+            <th>Prayer Time</th>
+            <th>Suggested Workout Slot</th>
+          </tr>
+        </thead>
+        <tbody class="text-dark">
+          <tr>
+            <td>Fajr</td>
+            <td>5:00 AM</td>
+            <td>5:30 AM – 6:15 AM (Early energizer!)</td>
+          </tr>
+          <tr>
+            <td>Dhuhr</td>
+            <td>1:30 PM</td>
+            <td>2:00 PM – 3:00 PM (Post-lunch mobility)</td>
+          </tr>
+          <tr>
+            <td>Asr</td>
+            <td>5:00 PM</td>
+            <td>5:30 PM – 6:30 PM (Power session)</td>
+          </tr>
+          <tr>
+            <td>Maghrib</td>
+            <td>7:10 PM</td>
+            <td>7:45 PM – 8:30 PM (Stretch + light cardio)</td>
+          </tr>
+          <tr>
+            <td>Isha</td>
+            <td>8:45 PM</td>
+            <td>9:15 PM – 10:00 PM (Optional HIIT)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 2: FITNESS PROGRESS SAMPLE ===================== -->
+<section class="py-5 text-center mt-5 mb-5" >
+  <div class="container">
+    <h2 class="section-title fs-1">📊 Your Fitness Progress</h2>
+    <p class="mb-5">Stay motivated by tracking your achievements. Below is a sample of your strength progress graph.</p>
+    <img src="ftrack.avif"
+         class="img-fluid shadow-card mb-4 rounded-4 mt-3" 
+     style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);"  alt="Fitness Progress Sample Graph">
+    <p class="text-dark">Real graphs will be visible once you're active in your fitness program.</p>
+  </div>
+</section>
+
+<!-- ===================== SECTION 3: BMI CALCULATOR ===================== -->
+<!-- BMI Section -->
+<section class="py-5 mt-5 mb-5" style="background: linear-gradient(135deg, #000000, #001f3f);">
+  <div class="container text-center text-light">
+    <h2 class="fw-bold mb-3">⚖️ BMI Calculator</h2>
+    <p class="mb-5">Know your Body Mass Index and take control of your health the smart way.</p>
+
+    <div class="d-flex justify-content-center">
+      <div class="p-4 bg-light text-dark rounded-4 shadow-lg" style="width: 100%; max-width: 600px;">
+        <form onsubmit="calculateBMI(event)">
+          <div class="mb-3">
+            <input type="number" class="form-control" id="weight" placeholder="Enter your weight (kg)" required>
+          </div>
+          <div class="mb-3">
+            <input type="number" class="form-control" id="height" placeholder="Enter your height (cm)" required>
+          </div>
+          <button type="submit" class="btn btn-warning w-100">Calculate BMI</button>
+        </form>
+        <div id="bmiResult" class="mt-4 fw-bold text-center text-success"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript -->
+
+
+
+
+
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Gym Info -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">🏋️ UmmahFit Gym</h5>
+        <p>
+          UmmahFit is designed for the fitness of the Muslim Ummah. Whether you're managing a gym or running community classes, this platform supports health and harmony in a values-based environment.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="membership.html" class="text-light text-decoration-none">Membership</a></li>
+          <li><a href="services.html" class="text-light text-decoration-none">services</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase text-warning">Contact Us</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-geo-alt-fill"></i> Khuiratta,Kotli Azad kashmir</li>
+          <li><i class="bi bi-telephone-fill"></i> +92 3116412711</li>
+          <li><i class="bi bi-envelope-fill"></i> ummahfit145@gmail.com</li>
+          <a href="contactus.html"><li><i class="bi bi-arrow-right"></i> ClickMe! for Contact-as-a-form</li></a>
+        </ul>
+        <!-- Social Icons (optional) -->
+        <div class="mt-2">
+          <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="bg-light mt-4">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 UmmahFit Gym. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>
